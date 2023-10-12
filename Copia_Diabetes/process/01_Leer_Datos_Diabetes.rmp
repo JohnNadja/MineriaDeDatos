@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.1.003">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="10.1.003" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="open_file" compatibility="10.1.003" expanded="true" height="68" name="Open File" width="90" x="45" y="136">
+        <parameter key="resource_type" value="repository blob entry"/>
+        <parameter key="repository_entry" value="//02_Ejercicio/diabetes.tab.txt"/>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="10.1.003" expanded="true" height="68" name="Read CSV" width="90" x="246" y="136">
+        <parameter key="csv_file" value="C:\Users\dilan\Documents\RapidMiner\Repositories\02_Ejercicio\diabetes.tab.txt"/>
+        <parameter key="column_separators" value="&#9;"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="UTF-8"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="AGE.true.integer.attribute"/>
+          <parameter key="1" value="SEX.true.binominal.attribute"/>
+          <parameter key="2" value="BMI.true.real.attribute"/>
+          <parameter key="3" value="BP.true.real.attribute"/>
+          <parameter key="4" value="S1.true.integer.attribute"/>
+          <parameter key="5" value="S2.true.real.attribute"/>
+          <parameter key="6" value="S3.true.integer.attribute"/>
+          <parameter key="7" value="S4.true.real.attribute"/>
+          <parameter key="8" value="S5.true.real.attribute"/>
+          <parameter key="9" value="S6.true.integer.attribute"/>
+          <parameter key="10" value="Y.true.integer.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="10.1.003" expanded="true" height="68" name="Store" width="90" x="380" y="136">
+        <parameter key="repository_entry" value="//02_Ejercicio/data/DiabetesDataSet"/>
+      </operator>
+      <connect from_op="Open File" from_port="file" to_op="Read CSV" to_port="file"/>
+      <connect from_op="Read CSV" from_port="output" to_op="Store" to_port="input"/>
+      <connect from_op="Store" from_port="through" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
