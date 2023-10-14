@@ -14,7 +14,7 @@
     <process expanded="true">
       <operator activated="true" class="open_file" compatibility="10.1.003" expanded="true" height="68" name="Open File" width="90" x="45" y="136">
         <parameter key="resource_type" value="repository blob entry"/>
-        <parameter key="repository_entry" value="//02_Ejercicio/diabetes.tab.txt"/>
+        <parameter key="repository_entry" value="../diabetes.tab.txt"/>
       </operator>
       <operator activated="true" class="read_csv" compatibility="10.1.003" expanded="true" height="68" name="Read CSV" width="90" x="246" y="136">
         <parameter key="csv_file" value="C:\Users\dilan\Documents\RapidMiner\Repositories\02_Ejercicio\diabetes.tab.txt"/>
@@ -54,7 +54,7 @@
         <parameter key="read_not_matching_values_as_missings" value="false"/>
       </operator>
       <operator activated="true" class="store" compatibility="10.1.003" expanded="true" height="68" name="Store" width="90" x="380" y="136">
-        <parameter key="repository_entry" value="//02_Ejercicio/data/DiabetesDataSet"/>
+        <parameter key="repository_entry" value="../data/DiabetesDataSet"/>
       </operator>
       <connect from_op="Open File" from_port="file" to_op="Read CSV" to_port="file"/>
       <connect from_op="Read CSV" from_port="output" to_op="Store" to_port="input"/>
