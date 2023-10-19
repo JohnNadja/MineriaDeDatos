@@ -73,7 +73,7 @@
       <portSpacing port="sink_result 3" spacing="0"/>
       <portSpacing port="sink_result 4" spacing="0"/>
       <portSpacing port="sink_result 5" spacing="0"/>
-      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="260" y="343">La clase que predice mejor es la clase s&amp;#237;&lt;br&gt;Class no (0.357)&lt;br&gt;4 distributions&lt;br&gt;&lt;br&gt;Class yes (0.643)&lt;br&gt;4 distributions</description>
+      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="266" y="303">La clase que predice mejor es la clase s&amp;#237;&lt;br&gt;Class no (0.357)&lt;br&gt;4 distributions&lt;br&gt;&lt;br&gt;Class yes (0.643)&lt;br&gt;4 distributions</description>
       <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="137" y="28">Excluir el atributo humidity da como resultado un 57% en performance y no excluir ningun atributo da el 53%</description>
     </process>
   </operator>
