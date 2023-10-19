@@ -18,7 +18,7 @@
       <operator activated="true" class="blending:select_attributes" compatibility="10.2.000" expanded="true" height="82" name="Select Attributes" width="90" x="179" y="136">
         <parameter key="type" value="exclude attributes"/>
         <parameter key="attribute_filter_type" value="one attribute"/>
-        <parameter key="select_attribute" value="Name"/>
+        <parameter key="select_attribute" value="Humidity"/>
         <parameter key="select_subset" value=""/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
@@ -74,6 +74,7 @@
       <portSpacing port="sink_result 4" spacing="0"/>
       <portSpacing port="sink_result 5" spacing="0"/>
       <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="260" y="343">La clase que predice mejor es la clase s&amp;#237;&lt;br&gt;Class no (0.357)&lt;br&gt;4 distributions&lt;br&gt;&lt;br&gt;Class yes (0.643)&lt;br&gt;4 distributions</description>
+      <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="137" y="28">Excluir el atributo humidity da como resultado un 57% en performance y no excluir ningun atributo da el 53%</description>
     </process>
   </operator>
 </process>
