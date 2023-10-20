@@ -15,7 +15,7 @@
       <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve dataSetGameOfThrones" width="90" x="45" y="85">
         <parameter key="repository_entry" value="../data/dataSetGameOfThrones"/>
       </operator>
-      <operator activated="true" class="filter_examples" compatibility="10.2.000" expanded="true" height="103" name="Filter Examples" width="90" x="246" y="34">
+      <operator activated="true" class="filter_examples" compatibility="10.2.000" expanded="true" height="103" name="Filter Examples" width="90" x="45" y="187">
         <parameter key="parameter_expression" value=""/>
         <parameter key="condition_class" value="custom_filters"/>
         <parameter key="invert_filter" value="false"/>
@@ -31,14 +31,14 @@
         <parameter key="filters_logic_and" value="true"/>
         <parameter key="filters_check_metadata" value="true"/>
       </operator>
-      <operator activated="true" class="blending:select_attributes" compatibility="10.2.000" expanded="true" height="82" name="Select Attributes" width="90" x="380" y="34">
+      <operator activated="true" class="blending:select_attributes" compatibility="10.2.000" expanded="true" height="82" name="Select Attributes" width="90" x="179" y="238">
         <parameter key="type" value="include attributes"/>
         <parameter key="attribute_filter_type" value="a subset"/>
         <parameter key="select_attribute" value=""/>
         <parameter key="select_subset" value="attacker_size␞battle_number␞defender_size␞major_capture␞major_death␞year␞summer"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
-      <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="514" y="34">
+      <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="313" y="238">
         <list key="set_roles">
           <parameter key="battle_number" value="id"/>
         </list>
