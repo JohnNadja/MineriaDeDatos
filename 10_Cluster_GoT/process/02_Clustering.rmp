@@ -15,7 +15,7 @@
       <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve dataSetGameOfThrones" width="90" x="45" y="85">
         <parameter key="repository_entry" value="../data/dataSetGameOfThrones"/>
       </operator>
-      <operator activated="true" class="filter_examples" compatibility="10.2.000" expanded="true" height="103" name="Filter Examples" width="90" x="179" y="85">
+      <operator activated="true" class="filter_examples" compatibility="10.2.000" expanded="true" height="103" name="Filter Examples" width="90" x="246" y="34">
         <parameter key="parameter_expression" value=""/>
         <parameter key="condition_class" value="custom_filters"/>
         <parameter key="invert_filter" value="false"/>
@@ -26,27 +26,28 @@
           <parameter key="filters_entry_key" value="defender_size.is_not_missing."/>
           <parameter key="filters_entry_key" value="major_death.is_not_missing."/>
           <parameter key="filters_entry_key" value="major_capture.is_not_missing."/>
+          <parameter key="filters_entry_key" value="summer.is_not_missing."/>
         </list>
         <parameter key="filters_logic_and" value="true"/>
         <parameter key="filters_check_metadata" value="true"/>
       </operator>
-      <operator activated="true" class="blending:select_attributes" compatibility="10.2.000" expanded="true" height="82" name="Select Attributes" width="90" x="313" y="85">
+      <operator activated="true" class="blending:select_attributes" compatibility="10.2.000" expanded="true" height="82" name="Select Attributes" width="90" x="380" y="34">
         <parameter key="type" value="include attributes"/>
         <parameter key="attribute_filter_type" value="a subset"/>
         <parameter key="select_attribute" value=""/>
-        <parameter key="select_subset" value="attacker_size␞battle_number␞defender_size␞major_capture␞major_death␞summer␞year"/>
+        <parameter key="select_subset" value="attacker_size␞battle_number␞defender_size␞major_capture␞major_death␞year␞summer"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
-      <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="447" y="85">
+      <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="514" y="34">
         <list key="set_roles">
           <parameter key="battle_number" value="id"/>
         </list>
       </operator>
-      <operator activated="true" breakpoints="before" class="fast_k_means" compatibility="10.2.000" expanded="true" height="82" name="Clustering" width="90" x="648" y="289">
+      <operator activated="true" class="fast_k_means" compatibility="10.2.000" expanded="true" height="82" name="Clustering" width="90" x="648" y="34">
         <parameter key="add_cluster_attribute" value="true"/>
         <parameter key="add_as_label" value="false"/>
         <parameter key="remove_unlabeled" value="false"/>
-        <parameter key="k" value="5"/>
+        <parameter key="k" value="6"/>
         <parameter key="determine_good_start_values" value="true"/>
         <parameter key="measure_types" value="NumericalMeasures"/>
         <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
@@ -67,8 +68,8 @@
         <parameter key="use_local_random_seed" value="false"/>
         <parameter key="local_random_seed" value="1992"/>
       </operator>
-      <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="103" name="Multiply" width="90" x="849" y="187"/>
-      <operator activated="true" class="model_simulator:cluster_model_visualizer" compatibility="10.2.000" expanded="true" height="103" name="Cluster Model Visualizer" width="90" x="983" y="238"/>
+      <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="103" name="Multiply" width="90" x="648" y="187"/>
+      <operator activated="true" class="model_simulator:cluster_model_visualizer" compatibility="10.2.000" expanded="true" height="103" name="Cluster Model Visualizer" width="90" x="849" y="238"/>
       <connect from_op="Retrieve dataSetGameOfThrones" from_port="output" to_op="Filter Examples" to_port="example set input"/>
       <connect from_op="Filter Examples" from_port="example set output" to_op="Select Attributes" to_port="example set input"/>
       <connect from_op="Select Attributes" from_port="example set output" to_op="Set Role" to_port="example set input"/>
@@ -84,8 +85,8 @@
       <portSpacing port="sink_result 2" spacing="0"/>
       <portSpacing port="sink_result 3" spacing="0"/>
       <portSpacing port="sink_result 4" spacing="0"/>
-      <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="137" y="212">Cluster no trabaja con datos vacios &lt;br/&gt;Filter examples (is not missing)</description>
-      <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="410" y="178">Centroide tiene que ser un atributo numerico</description>
+      <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="186" y="170">Cluster no trabaja con datos vacios &lt;br/&gt;Filter examples (is not missing)</description>
+      <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="443" y="137">Centroide tiene que ser un atributo numerico</description>
     </process>
   </operator>
 </process>
