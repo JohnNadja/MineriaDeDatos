@@ -33,7 +33,7 @@
         <parameter key="select_subset" value="activity_period␞passenger_count"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
-      <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="447" y="85">
+      <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="447" y="34">
         <list key="set_roles">
           <parameter key="passenger_count" value="id"/>
         </list>
