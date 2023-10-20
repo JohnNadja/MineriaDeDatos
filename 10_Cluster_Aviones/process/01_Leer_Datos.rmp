@@ -40,7 +40,7 @@
           <parameter key="2" value="operating_airline_iata_code.true.polynominal.attribute"/>
           <parameter key="3" value="published_airline.true.polynominal.attribute"/>
           <parameter key="4" value="published_airline_iata_code.true.polynominal.attribute"/>
-          <parameter key="5" value="geo_summary.true.binominal.attribute"/>
+          <parameter key="5" value="geo_summary.true.polynominal.attribute"/>
           <parameter key="6" value="geo_region.true.polynominal.attribute"/>
           <parameter key="7" value="activity_type_code.true.polynominal.attribute"/>
           <parameter key="8" value="price_category_code.true.polynominal.attribute"/>
