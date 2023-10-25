@@ -19,7 +19,7 @@
         <parameter key="type" value="include attributes"/>
         <parameter key="attribute_filter_type" value="a subset"/>
         <parameter key="select_attribute" value=""/>
-        <parameter key="select_subset" value="Age␞Passenger Class␞Port of Embarkation␞Sex␞Survived␞Passenger Fare"/>
+        <parameter key="select_subset" value="Age␞Passenger Class␞Passenger Fare␞Port of Embarkation␞Sex␞Survived"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
       <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="313" y="136">
@@ -27,7 +27,20 @@
           <parameter key="Survived" value="label"/>
         </list>
       </operator>
-      <operator activated="true" class="concurrency:cross_validation" compatibility="10.2.000" expanded="true" height="145" name="Cross Validation" width="90" x="447" y="136">
+      <operator activated="true" class="filter_examples" compatibility="10.2.000" expanded="true" height="103" name="Filter Examples" width="90" x="447" y="136">
+        <parameter key="parameter_expression" value=""/>
+        <parameter key="condition_class" value="custom_filters"/>
+        <parameter key="invert_filter" value="false"/>
+        <list key="filters_list">
+          <parameter key="filters_entry_key" value="Passenger Class.is_not_missing."/>
+          <parameter key="filters_entry_key" value="Passenger Fare.is_not_missing."/>
+          <parameter key="filters_entry_key" value="Age.is_not_missing."/>
+          <parameter key="filters_entry_key" value="Port of Embarkation.is_not_missing."/>
+        </list>
+        <parameter key="filters_logic_and" value="true"/>
+        <parameter key="filters_check_metadata" value="true"/>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.2.000" expanded="true" height="145" name="Cross Validation" width="90" x="581" y="136">
         <parameter key="split_on_batch_attribute" value="false"/>
         <parameter key="leave_one_out" value="false"/>
         <parameter key="number_of_folds" value="13"/>
@@ -68,7 +81,8 @@
       </operator>
       <connect from_op="Retrieve Titanic" from_port="output" to_op="Select Attributes" to_port="example set input"/>
       <connect from_op="Select Attributes" from_port="example set output" to_op="Set Role" to_port="example set input"/>
-      <connect from_op="Set Role" from_port="example set output" to_op="Cross Validation" to_port="example set"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="Filter Examples" to_port="example set input"/>
+      <connect from_op="Filter Examples" from_port="example set output" to_op="Cross Validation" to_port="example set"/>
       <connect from_op="Cross Validation" from_port="model" to_port="result 1"/>
       <connect from_op="Cross Validation" from_port="example set" to_port="result 2"/>
       <connect from_op="Cross Validation" from_port="test result set" to_port="result 3"/>
@@ -79,7 +93,8 @@
       <portSpacing port="sink_result 3" spacing="0"/>
       <portSpacing port="sink_result 4" spacing="0"/>
       <portSpacing port="sink_result 5" spacing="0"/>
-      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="266" y="303">La clase que predice mejor es la clase no&lt;br&gt;Class Yes (0.382)&lt;br&gt;5 distributions&lt;br&gt;&lt;br&gt;Class No (0.618)&lt;br&gt;5 distributions</description>
+      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="184" y="244">La clase que predice mejor es la clase no&lt;br&gt;Class Yes (0.382)&lt;br&gt;5 distributions&lt;br&gt;&lt;br&gt;Class No (0.618)&lt;br&gt;5 distributions</description>
+      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="390" y="15">de 1308 datos se descartaron 270 aprox&lt;br/&gt;Subio un poco el performance pero esos datos son apox el 20% del total</description>
     </process>
   </operator>
 </process>
