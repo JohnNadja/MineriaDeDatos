@@ -15,13 +15,6 @@
       <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve Golf" width="90" x="45" y="136">
         <parameter key="repository_entry" value="../data/Golf"/>
       </operator>
-      <operator activated="true" class="blending:select_attributes" compatibility="10.2.000" expanded="true" height="82" name="Select Attributes" width="90" x="179" y="136">
-        <parameter key="type" value="exclude attributes"/>
-        <parameter key="attribute_filter_type" value="one attribute"/>
-        <parameter key="select_attribute" value="Humidity"/>
-        <parameter key="select_subset" value=""/>
-        <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
-      </operator>
       <operator activated="true" class="concurrency:cross_validation" compatibility="10.2.000" expanded="true" height="145" name="Cross Validation" width="90" x="313" y="136">
         <parameter key="split_on_batch_attribute" value="false"/>
         <parameter key="leave_one_out" value="false"/>
@@ -61,8 +54,7 @@
           <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="115" y="152">Performance es utilizado para ver cuanto se tiene de ganancia y cual es el porcentaje de error</description>
         </process>
       </operator>
-      <connect from_op="Retrieve Golf" from_port="output" to_op="Select Attributes" to_port="example set input"/>
-      <connect from_op="Select Attributes" from_port="example set output" to_op="Cross Validation" to_port="example set"/>
+      <connect from_op="Retrieve Golf" from_port="output" to_op="Cross Validation" to_port="example set"/>
       <connect from_op="Cross Validation" from_port="model" to_port="result 1"/>
       <connect from_op="Cross Validation" from_port="example set" to_port="result 2"/>
       <connect from_op="Cross Validation" from_port="test result set" to_port="result 3"/>
