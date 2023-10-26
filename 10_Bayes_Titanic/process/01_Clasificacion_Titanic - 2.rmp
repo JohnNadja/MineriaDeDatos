@@ -12,14 +12,14 @@
     <parameter key="process_duration_for_mail" value="30"/>
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
-      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve Titanic" width="90" x="45" y="136">
-        <parameter key="repository_entry" value="../data/Titanic"/>
+      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve Titanic - 2" width="90" x="45" y="136">
+        <parameter key="repository_entry" value="../data/Titanic - 2"/>
       </operator>
       <operator activated="true" class="blending:select_attributes" compatibility="10.2.000" expanded="true" height="82" name="Select Attributes" width="90" x="179" y="136">
         <parameter key="type" value="include attributes"/>
         <parameter key="attribute_filter_type" value="a subset"/>
         <parameter key="select_attribute" value=""/>
-        <parameter key="select_subset" value="Age␞Passenger Class␞Passenger Fare␞Port of Embarkation␞Sex␞Survived"/>
+        <parameter key="select_subset" value="Age␞Passenger Class␞Port of Embarkation␞Sex␞Survived"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
       <operator activated="true" class="blending:set_role" compatibility="10.2.000" expanded="true" height="82" name="Set Role" width="90" x="313" y="136">
@@ -63,7 +63,6 @@
         <parameter key="invert_filter" value="false"/>
         <list key="filters_list">
           <parameter key="filters_entry_key" value="Passenger Class.is_not_missing."/>
-          <parameter key="filters_entry_key" value="Passenger Fare.is_not_missing."/>
           <parameter key="filters_entry_key" value="Port of Embarkation.is_not_missing."/>
         </list>
         <parameter key="filters_logic_and" value="true"/>
@@ -108,7 +107,7 @@
           <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="115" y="152">Performance es utilizado para ver cuanto se tiene de ganancia y cual es el porcentaje de error</description>
         </process>
       </operator>
-      <connect from_op="Retrieve Titanic" from_port="output" to_op="Select Attributes" to_port="example set input"/>
+      <connect from_op="Retrieve Titanic - 2" from_port="output" to_op="Select Attributes" to_port="example set input"/>
       <connect from_op="Select Attributes" from_port="example set output" to_op="Set Role" to_port="example set input"/>
       <connect from_op="Set Role" from_port="example set output" to_op="Generate Attributes" to_port="table input"/>
       <connect from_op="Generate Attributes" from_port="table output" to_op="Replace Missing Values" to_port="example set input"/>
