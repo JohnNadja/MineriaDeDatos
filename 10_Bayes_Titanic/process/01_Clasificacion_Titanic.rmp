@@ -27,21 +27,11 @@
           <parameter key="Survived" value="label"/>
         </list>
       </operator>
-      <operator activated="true" class="filter_examples" compatibility="10.2.000" expanded="true" height="103" name="Filter Examples" width="90" x="447" y="136">
-        <parameter key="parameter_expression" value=""/>
-        <parameter key="condition_class" value="custom_filters"/>
-        <parameter key="invert_filter" value="false"/>
-        <list key="filters_list">
-          <parameter key="filters_entry_key" value="Port of Embarkation.is_not_missing."/>
-        </list>
-        <parameter key="filters_logic_and" value="true"/>
-        <parameter key="filters_check_metadata" value="true"/>
-      </operator>
-      <operator activated="true" class="replace_missing_values" compatibility="10.2.000" expanded="true" height="103" name="Replace Missing Values" width="90" x="648" y="136">
+      <operator activated="true" class="replace_missing_values" compatibility="10.2.000" expanded="true" height="103" name="Replace Missing Values" width="90" x="447" y="136">
         <parameter key="return_preprocessing_model" value="false"/>
-        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute_filter_type" value="subset"/>
         <parameter key="attribute" value="Age"/>
-        <parameter key="attributes" value=""/>
+        <parameter key="attributes" value="|Age|Port of Embarkation"/>
         <parameter key="use_except_expression" value="false"/>
         <parameter key="value_type" value="attribute_value"/>
         <parameter key="use_value_type_exception" value="false"/>
@@ -56,7 +46,7 @@
           <parameter key="Age" value="average"/>
         </list>
       </operator>
-      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.003" expanded="true" height="145" name="Cross Validation" width="90" x="849" y="136">
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.003" expanded="true" height="145" name="Cross Validation" width="90" x="581" y="85">
         <parameter key="split_on_batch_attribute" value="false"/>
         <parameter key="leave_one_out" value="false"/>
         <parameter key="number_of_folds" value="15"/>
@@ -97,8 +87,7 @@
       </operator>
       <connect from_op="Retrieve Titanic" from_port="output" to_op="Select Attributes" to_port="example set input"/>
       <connect from_op="Select Attributes" from_port="example set output" to_op="Set Role" to_port="example set input"/>
-      <connect from_op="Set Role" from_port="example set output" to_op="Filter Examples" to_port="example set input"/>
-      <connect from_op="Filter Examples" from_port="example set output" to_op="Replace Missing Values" to_port="example set input"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="Replace Missing Values" to_port="example set input"/>
       <connect from_op="Replace Missing Values" from_port="example set output" to_op="Cross Validation" to_port="example set"/>
       <connect from_op="Cross Validation" from_port="model" to_port="result 1"/>
       <connect from_op="Cross Validation" from_port="example set" to_port="result 2"/>
@@ -110,9 +99,8 @@
       <portSpacing port="sink_result 3" spacing="0"/>
       <portSpacing port="sink_result 4" spacing="0"/>
       <portSpacing port="sink_result 5" spacing="0"/>
-      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="134" y="264">La clase que predice mejor es la clase no&lt;br&gt;Class Yes (0.382)&lt;br&gt;5 distributions&lt;br&gt;&lt;br&gt;Class No (0.618)&lt;br&gt;5 distributions</description>
-      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="393" y="246">de 1308 datos se descartaron 270 aprox&lt;br&gt;Subio un poco el performance pero esos datos son apox el 20% del total. Aumenta 2% el performance</description>
-      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="643" y="284">Sin embargo, al usar Replace Missing values (si no se descartan los datos de AGE) y se reemplazan con un promedio de datos, obtenemos un 78.21%</description>
+      <description align="center" color="yellow" colored="false" height="157" resized="false" width="180" x="262" y="17">de 1308 datos se descartaron 263 de Age y 2 Portof Embarkation &lt;br/&gt;Se reemplazaron por el promedio</description>
+      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="389" y="242">Sin embargo, al usar Replace Missing values (si no se descartan los datos de AGE) y se reemplazan con un promedio de datos, obtenemos un 78.21%</description>
     </process>
   </operator>
 </process>

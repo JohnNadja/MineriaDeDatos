@@ -13,7 +13,7 @@
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
       <operator activated="true" class="read_excel" compatibility="10.2.000" expanded="true" height="68" name="Read Excel" width="90" x="112" y="85">
-        <parameter key="excel_file" value="C:\Users\edgar\Documents\GitHub\MineriaDeDatos\10_Bayes_Golf\Datos en Bruto.xlsx"/>
+        <parameter key="excel_file" value="C:\Users\dilan\Documents\GitHub\MineriaDeDatos\10_Bayes_Golf\Diez_Datos_Para_Comprobacion.xlsx"/>
         <parameter key="sheet_selection" value="sheet number"/>
         <parameter key="sheet_number" value="1"/>
         <parameter key="imported_cell_range" value="A1"/>
@@ -34,7 +34,7 @@
         <parameter key="read_not_matching_values_as_missings" value="false"/>
       </operator>
       <operator activated="true" class="store" compatibility="10.2.000" expanded="true" height="68" name="Store" width="90" x="246" y="85">
-        <parameter key="repository_entry" value="../data/Golf_Procesado"/>
+        <parameter key="repository_entry" value="../data/Golf_Diez_Datos_Para_Comprobacion"/>
       </operator>
       <connect from_op="Read Excel" from_port="output" to_op="Store" to_port="input"/>
       <connect from_op="Store" from_port="through" to_port="result 1"/>
