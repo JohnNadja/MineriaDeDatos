@@ -100,7 +100,7 @@
       <portSpacing port="sink_result 4" spacing="0"/>
       <portSpacing port="sink_result 5" spacing="0"/>
       <description align="center" color="yellow" colored="false" height="157" resized="false" width="180" x="262" y="17">de 1308 datos se descartaron 263 de Age y 2 Portof Embarkation &lt;br/&gt;Se reemplazaron por el promedio</description>
-      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="389" y="242">Sin embargo, al usar Replace Missing values (si no se descartan los datos de AGE) y se reemplazan con un promedio de datos, obtenemos un 78.21%</description>
+      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="389" y="242">Sin embargo, al usar Replace Missing values (si no se descartan los datos de AGE) y se reemplazan con un promedio de datos, obtenemos m&amp;#225;s del 75%</description>
     </process>
   </operator>
 </process>
