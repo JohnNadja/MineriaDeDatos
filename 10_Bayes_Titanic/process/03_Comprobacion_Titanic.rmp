@@ -12,10 +12,10 @@
     <parameter key="process_duration_for_mail" value="30"/>
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
-      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve Titanic_Diez_Datos_Para_Comprobacion" width="90" x="447" y="34">
+      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve Titanic_Diez_Datos_Para_Comprobacion" width="90" x="313" y="85">
         <parameter key="repository_entry" value="../data/Titanic_Diez_Datos_Para_Comprobacion"/>
       </operator>
-      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.003" expanded="true" height="145" name="Cross Validation" width="90" x="648" y="34">
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.003" expanded="true" height="145" name="Cross Validation" width="90" x="514" y="85">
         <parameter key="split_on_batch_attribute" value="false"/>
         <parameter key="leave_one_out" value="false"/>
         <parameter key="number_of_folds" value="5"/>
@@ -89,8 +89,8 @@
       <portSpacing port="sink_result 3" spacing="0"/>
       <portSpacing port="sink_result 4" spacing="0"/>
       <portSpacing port="sink_result 5" spacing="0"/>
-      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="242" y="111">La clase que predice mejor es la clase no&lt;br&gt;Class Yes (0.382)&lt;br&gt;5 distributions&lt;br&gt;&lt;br&gt;Class No (0.618)&lt;br&gt;5 distributions</description>
-      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="584" y="225">Sin embargo, al usar Replace Missing values (si no se descartan los datos de AGE) y se reemplazan con un promedio de datos, obtenemos un 78.21%</description>
+      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="254" y="180">La clase que predice mejor es la clase no&lt;br&gt;Class Yes (0.382)&lt;br&gt;5 distributions&lt;br&gt;&lt;br&gt;Class No (0.618)&lt;br&gt;5 distributions</description>
+      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="453" y="251">Sin embargo, al usar Replace Missing values (si no se descartan los datos de AGE) y se reemplazan con un promedio de datos, obtenemos un 78.21%</description>
     </process>
   </operator>
 </process>
