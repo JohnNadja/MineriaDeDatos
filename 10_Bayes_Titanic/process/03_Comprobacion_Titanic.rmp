@@ -89,8 +89,7 @@
       <portSpacing port="sink_result 3" spacing="0"/>
       <portSpacing port="sink_result 4" spacing="0"/>
       <portSpacing port="sink_result 5" spacing="0"/>
-      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="254" y="180">La clase que predice mejor es la clase no&lt;br&gt;Class Yes (0.382)&lt;br&gt;5 distributions&lt;br&gt;&lt;br&gt;Class No (0.618)&lt;br&gt;5 distributions</description>
-      <description align="center" color="yellow" colored="false" height="121" resized="false" width="180" x="453" y="251">Sin embargo, al usar Replace Missing values (si no se descartan los datos de AGE) y se reemplazan con un promedio de datos, obtenemos un 78.21%</description>
+      <description align="center" color="yellow" colored="false" height="139" resized="false" width="180" x="254" y="180">La clase que predice mejor es la clase no&lt;br&gt;Class Yes (0.400)&lt;br&gt;4 distributions&lt;br&gt;&lt;br&gt;Class No (0.600)&lt;br&gt;4 distributions</description>
     </process>
   </operator>
 </process>
