@@ -1,0 +1,201 @@
+ID;Edad;Genero;Nivel de Educacion;Titulo profesional;Años de experiencia;Salario
+1;32;Masculino;Licenciatura;Ingeniero de software;5;9000
+2;28;Femenino;Maestria;Analista de datos;3;6500
+3;45;Masculino;Doctorado;Senior Gerente;15;15000
+4;36;Femenino;Licenciatura;Administración de Empresas;7;6000
+5;52;Masculino;Maestria;Director;20;20000
+6;29;Masculino;Licenciatura;Analista de marketing;2;5500
+7;42;Femenino;Maestria;Gerente de Producto;12;12000
+8;31;Masculino;Licenciatura;Gerente de ventas;4;8000
+9;26;Femenino;Licenciatura;Coordinador de marketing;1;4500
+10;38;Masculino;Doctorado;Senior Científico;10;11000
+11;29;Masculino;Maestria;Desarrollador de software;3;7500
+12;48;Femenino;Licenciatura;Gerente de RRHH;18;14000
+13;35;Masculino;Licenciatura;Analista financiero;6;6500
+14;40;Femenino;Maestria;Gerente de proyecto;14;13000
+15;27;Masculino;Licenciatura;Representante de Servicio al Cliente;2;4000
+16;44;Masculino;Licenciatura;Gerente de Operaciones;16;12500
+17;33;Femenino;Maestria;Gerente de Marketing;7;9000
+18;39;Masculino;Doctorado;Senior Ingeniero;12;11500
+19;25;Femenino;Licenciatura;Empleado de entrada de datos;0;3500
+20;51;Masculino;Licenciatura;Director de ventas;22;18000
+21;34;Femenino;Maestria;Analista de negocios;5;8000
+22;47;Masculino;Maestria;Vicepresidente de Operaciones;19;19000
+23;30;Masculino;Licenciatura;Soporte de TI;2;5000
+24;36;Femenino;Licenciatura;Reclutador;9;6000
+25;41;Masculino;Maestria;Gerente financiero;13;14000
+26;28;Femenino;Licenciatura;Especialista medios de comunicación;3;4500
+27;37;Femenino;Maestria;Administrador de software;11;11000
+28;24;Masculino;Licenciatura;Junior Desarrollador;1;4000
+29;43;Femenino;Doctorado;Senior Consultor;15;14000
+30;33;Masculino;Maestria;Diseñador de productos;6;9000
+31;50;Masculino;Licenciatura;Director ejecutivo;25;25000
+32;31;Femenino;Licenciatura;Contador;4;5500
+33;29;Masculino;Maestria;Científico de datos;3;7500
+34;39;Femenino;Licenciatura;Especialista en Marketing;10;6500
+35;46;Masculino;Doctorado;Senior Gerente;20;17000
+36;27;Masculino;Licenciatura;Escritor técnico;2;4500
+37;35;Femenino;Licenciatura;Gerente de RRHH;7;6000
+38;42;Masculino;Maestria;Ingeniero de Proyectos;14;11500
+39;26;Femenino;Licenciatura;Representante del cliente;1;4000
+40;49;Masculino;Licenciatura;Ejecutivo de ventas;21;16000
+41;34;Femenino;Maestria;Diseñadores de experiencia de usuario;5;8000
+42;48;Masculino;Maestria;Director de Operaciones;18;19000
+43;30;Masculino;Licenciatura;Ingeniero de Redes;3;6000
+44;36;Femenino;Licenciatura;Asistente Administrativo;8;4500
+45;41;Masculino;Maestria;Consultor de Estrategia;13;13000
+46;28;Femenino;Licenciatura;Redactor;2;4000
+47;32;Masculino;Licenciatura;Gerente de Cuentas;5;7500
+48;45;Femenino;Maestria;Director de Marketing;16;18000
+49;38;Masculino;Doctorado;Senior Científico;11;12000
+50;25;Masculino;Licenciatura;Analista de Atencion al Cliente;0;3500
+51;51;Femenino;Licenciatura;Gerente de Servicio al Cliente;22;13000
+52;33;Masculino;Maestria;Analista de Inteligencia de Negocios;7;8500
+53;40;Femenino;Licenciatura;Coordinador de Eventos;12;6000
+54;47;Masculino;Maestria;Vicepresidente de Finanzas;19;20000
+55;29;Femenino;Licenciatura;Diseñador Gráfico;3;5000
+56;36;Masculino;Licenciatura;Gerente de ventas;9;9500
+57;27;Femenino;Maestria;Investigador experiencia de usuario;2;6500
+58;43;Masculino;Doctorado;Senior Ingeniero;17;14000
+59;30;Femenino;Licenciatura;Gerente de medios de comunicación;4;5500
+60;35;Masculino;Maestria;Gerente de Producto;7;10500
+61;51;Femenino;Maestria;Director de Operaciones;23;17000
+62;29;Masculino;Licenciatura;Analista de Marketing;3;5000
+63;40;Femenino;Licenciatura;Gerente de RRHH;12;8000
+64;47;Masculino;Doctorado;Senior Científico de datos;21;18000
+65;26;Masculino;Licenciatura;Junior Contador;1;3500
+66;38;Femenino;Maestria;Digital Marketing Manager;10;9000
+67;46;Masculino;Licenciatura;Gerente de TI;19;12000
+68;31;Femenino;Licenciatura;Representante de Servicio al Cliente;5;4500
+69;34;Masculino;Maestria;Gerente de Desarrollo de Negocios;8;9000
+70;49;Femenino;Maestria;Senior Analista financiero;18;15000
+71;33;Masculino;Licenciatura;Desarrollador web;6;6500
+72;39;Femenino;Licenciatura;Reclutador;11;7000
+73;45;Masculino;Doctorado;Director de Investigación;16;19000
+74;28;Masculino;Licenciatura;Especialista en Soporte Técnico;2;4000
+75;42;Femenino;Maestria;Director Creativo;14;12000
+76;37;Masculino;Licenciatura;Gerente de proyecto;10;9500
+77;50;Femenino;Licenciatura;Gerente de Operaciones;22;16000
+78;32;Masculino;Maestria;Senior Ingeniero de software;6;10000
+79;48;Femenino;Maestria;Director de RRHH;20;18000
+80;30;Femenino;Licenciatura;Gerente de Contenidos de Marketing;3;5500
+81;36;Masculino;Licenciatura;Reclutador Técnico;8;7000
+82;41;Femenino;Maestria;Analista de datos;13;8000
+83;25;Masculino;Licenciatura;Representante de Ventas;0;3000
+84;52;Masculino;Doctorado;Director de Tecnología;24;25000
+85;29;Femenino;Licenciatura;Junior Diseñador;2;4000
+86;34;Femenino;Maestria;Asesor Financiero;10;9500
+87;27;Masculino;Licenciatura;Junior Gerente de Cuentas;2;4500
+88;40;Femenino;Licenciatura;Gerente de RRHH;15;8000
+89;46;Masculino;Maestria;Senior Gerente de proyecto;21;13500
+90;31;Femenino;Licenciatura;Coordinador de marketing;6;5500
+91;36;Masculino;Doctorado;Científico Principal;11;12000
+92;29;Femenino;Licenciatura;Administración de Empresas;3;4000
+93;43;Masculino;Licenciatura;Gerente de Cadena de Suministro;18;10500
+94;52;Femenino;Maestria;Senior Gerente de Marketing;25;17000
+95;33;Masculino;Licenciatura;Analista de negocios;7;7500
+96;39;Femenino;Licenciatura;Especialista en Formación;12;6500
+97;47;Masculino;Doctorado;Investigador Científico;22;16000
+98;26;Masculino;Licenciatura;Junior Desarrollador de software;1;3500
+99;38;Femenino;Maestria;Gerente de Relaciones Públicas;10;9000
+100;45;Masculino;Licenciatura;Analista de Operaciones;20;11000
+101;31;Femenino;Licenciatura;Coordinador de Eventos;5;4500
+102;35;Masculino;Maestria;Gerente de Producto de Marketing;8;9500
+103;49;Femenino;Maestria;Senior Gerente de RRHH;19;15000
+104;33;Masculino;Licenciatura;Junior Desarrollador web;5;5000
+105;39;Femenino;Maestria;Senior Coordinador de Proyectos;13;8000
+106;44;Masculino;Doctorado;Director de Datos;16;22000
+107;30;Femenino;Licenciatura;Productor de Contenido Digital;3;5000
+108;36;Masculino;Licenciatura;Especialista en soporte de TI;7;6000
+109;41;Femenino;Maestria;Senior Analista de marketing;14;10000
+110;28;Masculino;Licenciatura;Gerente de Éxito del Cliente;2;4000
+111;42;Femenino;Maestria;Senior Diseñador Gráfico;15;11000
+112;37;Masculino;Licenciatura;Gerente de Proyectos de Software;9;9500
+113;50;Femenino;Licenciatura;Analista de Cadena de Suministro;22;13000
+114;32;Masculino;Maestria;Senior Analista de negocios;6;9000
+115;23;Femenino;Licenciatura;Junior Analista de marketing;0;3500
+116;31;Masculino;Maestria;Senior Analista financiero;6;9500
+117;40;Femenino;Licenciatura;Gerente de Oficina;15;6500
+118;48;Masculino;Doctorado;Ingeniero Principal;20;17000
+119;29;Femenino;Licenciatura;Junior Gerente de RRHH;3;4500
+120;35;Masculino;Maestria;Senior Gerente de Producto;10;12000
+121;42;Femenino;Licenciatura;Gerente de ventas;17;10000
+122;53;Masculino;Maestria;Director of Marketing;25;18000
+123;33;Femenino;Licenciatura;Junior Analista de Operaciones;5;5000
+124;38;Masculino;Licenciatura;Gerente de Servicio al Cliente;11;8000
+125;44;Femenino;Doctorado;Senior Científico;16;14000
+126;26;Masculino;Licenciatura;Junior Contador;2;4000
+127;37;Femenino;Maestria;Senior Gerente de RRHH;9;9500
+128;45;Masculino;Licenciatura;Gerente de Operaciones de Ventas;18;11000
+129;32;Femenino;Licenciatura;Coordinador de marketing;4;5000
+130;34;Masculino;Maestria;Senior Desarrollador de software;8;10500
+131;50;Femenino;Maestria;Director de Operaciones;21;16000
+132;29;Masculino;Licenciatura;Junior Diseñador Web;3;4500
+133;40;Femenino;Maestria;Senior Especialista en Formación;12;10000
+134;47;Masculino;Doctorado;Senior Científico Investigador;22;16000
+135;27;Masculino;Licenciatura;Junior Representante de Ventas;1;3500
+136;39;Femenino;Licenciatura;Asistente Administrativo;10;5500
+137;46;Masculino;Maestria;Senior Gerente de proyecto;19;14000
+138;30;Femenino;Licenciatura;Junior Gerente de Marketing;4;5000
+139;36;Masculino;Licenciatura;Junior Analista de datos;7;6000
+140;43;Femenino;Maestria;Senior Gerente de Producto de Marketing;14;12000
+141;28;Masculino;Licenciatura;Junior Analista de negocios;2;4000
+142;41;Femenino;Maestria;Senior Gerente de Marketing;13;11000
+143;33;Masculino;Licenciatura;Junior Desarrollador de software;5;5000
+144;47;Masculino;Licenciatura;Senior Gerente de ventas;20;13500
+145;25;Femenino;Maestria;Junior Especialista en Marketing;1;4000
+146;34;Masculino;Licenciatura;Senior Analista de negocios;8;9000
+147;42;Femenino;Doctorado;Senior Científico de datos;16;15000
+148;31;Masculino;Licenciatura;Junior Gerente de proyecto;4;6000
+149;38;Femenino;Licenciatura;Senior Contador;10;8000
+150;45;Masculino;Maestria;Director de Ventas;19;17500
+151;29;Femenino;Licenciatura;Junior Reclutador;3;4500
+152;36;Masculino;Maestria;Senior Gerente de Desarrollo de Negocios;11;12000
+153;43;Femenino;Doctorado;Senior Diseñador de productos;18;14000
+154;26;Masculino;Licenciatura;Junior Especialista en Atención al Cliente;2;3500
+155;37;Femenino;Maestria;Senior Analista de marketing;9;9500
+156;44;Masculino;Licenciatura;Senior Especialista en soporte de TI;14;11000
+157;32;Femenino;Licenciatura;Junior Analista financiero;5;5000
+158;33;Masculino;Maestria;Senior Gerente de Operaciones;7;11500
+159;51;Femenino;Doctorado;Director de RRHH;23;18500
+160;28;Masculino;Licenciatura;Junior Ingeniero de software;2;4000
+161;39;Femenino;Licenciatura;Senior Representante de Ventas;12;9000
+162;48;Masculino;Maestria;Director de Gestión de Producto;21;17500
+163;30;Femenino;Licenciatura;Junior Redactor;3;4500
+164;35;Masculino;Licenciatura;Senior Coordinador de marketing;7;8000
+165;41;Femenino;Maestria;Senior Gerente de RRHH;13;12000
+166;27;Masculino;Licenciatura;Junior Asociado de Desarrollo de Negocios;1;3500
+167;40;Femenino;Licenciatura;Senior Gerente de Cuentas;14;11000
+168;46;Masculino;Doctorado;Senior Investigador ;18;15000
+169;31;Femenino;Licenciatura;Junior Coordinador de RRHH;4;5000
+170;34;Masculino;Maestria;Senior Ingeniero de software;9;10500
+171;50;Femenino;Maestria;Director de Finanzas;20;18000
+172;29;Masculino;Licenciatura;Junior Coordinador de marketing;2;4000
+173;43;Masculino;Licenciatura;Senior Gerente de proyecto;16;14000
+174;26;Femenino;Maestria;Junior Científico de datos;1;4500
+175;35;Masculino;Licenciatura;Senior Analista de Operaciones;7;8500
+176;42;Femenino;Doctorado;Senior Gerente de Marketing;18;14000
+177;31;Masculino;Licenciatura;Junior Contador;4;5000
+178;38;Femenino;Licenciatura;Senior Coordinador de RRHH;10;8000
+179;46;Masculino;Maestria;Director de Operaciones;20;17000
+180;29;Femenino;Licenciatura;Junior Representante de Ventas;2;4000
+181;37;Masculino;Maestria;Senior Analista de negocios;9;10500
+182;44;Femenino;Doctorado;Senior Diseñador de experiencia del usuario;15;14500
+183;27;Masculino;Licenciatura;Junior Gerente de Producto;2;4000
+184;36;Femenino;Licenciatura;Senior Especialista en Marketing;8;8500
+185;43;Masculino;Licenciatura;Senior Gerente de proyecto TI;14;13000
+186;33;Femenino;Maestria;Senior Analista financiero;6;9500
+187;34;Masculino;Licenciatura;Senior Analista de Aseguramiento de Calidad;9;10000
+188;50;Femenino;Doctorado;Director de Ventas y Marketing;22;18000
+189;28;Masculino;Licenciatura;Junior Analista de Operaciones;1;3500
+190;39;Femenino;Licenciatura;Senior Ejecutivo de Cuentas;12;9500
+191;47;Masculino;Maestria;Director de Desarrollo de Negocios;19;17000
+192;30;Femenino;Licenciatura;Junior Gerente de Redes Sociales;3;4500
+193;34;Masculino;Licenciatura;Senior Gerente de Producto;7;9500
+194;40;Femenino;Maestria;Senior Especialista en RRHH;13;12000
+195;28;Masculino;Licenciatura;Junior Analista de negocios;2;4000
+196;41;Femenino;Licenciatura;Senior Coordinador de marketing;11;9000
+197;45;Masculino;Doctorado;Senior Analista de datos;17;15500
+198;32;Femenino;Licenciatura;Junior Gerente de Cuentas;5;5500
+199;35;Masculino;Maestria;Senior Desarrollador de software;9;11000
+200;49;Femenino;Maestria;Director de Capital Humano;21;18000
