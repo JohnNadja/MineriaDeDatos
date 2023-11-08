@@ -15,7 +15,7 @@
       <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve FrutasDataSet" width="90" x="45" y="187">
         <parameter key="repository_entry" value="../data/FrutasDataSet"/>
       </operator>
-      <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="124" name="Multiply" width="90" x="179" y="85"/>
+      <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="103" name="Multiply" width="90" x="179" y="85"/>
       <operator activated="true" class="neural_net" compatibility="10.2.000" expanded="true" height="82" name="Neural Net" width="90" x="313" y="34">
         <list key="hidden_layers">
           <parameter key="1" value="3"/>
@@ -63,7 +63,6 @@
       <connect from_op="Retrieve FrutasDataSet" from_port="output" to_op="Multiply" to_port="input"/>
       <connect from_op="Multiply" from_port="output 1" to_op="Neural Net" to_port="training set"/>
       <connect from_op="Multiply" from_port="output 2" to_op="Apply Model" to_port="unlabelled data"/>
-      <connect from_op="Multiply" from_port="output 3" to_port="result 4"/>
       <connect from_op="Neural Net" from_port="model" to_op="Apply Model" to_port="model"/>
       <connect from_op="Apply Model" from_port="labelled data" to_op="Performance" to_port="labelled data"/>
       <connect from_op="Apply Model" from_port="model" to_port="result 3"/>
@@ -74,7 +73,6 @@
       <portSpacing port="sink_result 2" spacing="0"/>
       <portSpacing port="sink_result 3" spacing="0"/>
       <portSpacing port="sink_result 4" spacing="0"/>
-      <portSpacing port="sink_result 5" spacing="0"/>
       <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="272" y="185">Va a jalar las capas</description>
       <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="494" y="208">Apply model da datos extra del modelo</description>
       <description align="center" color="yellow" colored="false" height="105" resized="false" width="180" x="274" y="304">Se a&amp;#241;ade un nodo mas en la entrada</description>
