@@ -13,10 +13,7 @@
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
       <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve FrutasDataSetA1" width="90" x="45" y="85">
-        <parameter key="repository_entry" value="//10_Frutas_Redes_Neuronales/data/FrutasDataSetA1"/>
-      </operator>
-      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve FrutasDataSetA2" width="90" x="45" y="238">
-        <parameter key="repository_entry" value="//10_Frutas_Redes_Neuronales/data/FrutasDataSetA2"/>
+        <parameter key="repository_entry" value="../data/FrutasDataSetA1"/>
       </operator>
       <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="103" name="Multiply" width="90" x="179" y="85"/>
       <operator activated="true" class="perceptron" compatibility="10.2.000" expanded="true" height="82" name="Perceptron" width="90" x="313" y="85">
@@ -52,6 +49,9 @@
         <parameter key="skip_undefined_labels" value="true"/>
         <parameter key="use_example_weights" value="true"/>
         <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve FrutasDataSetA2" width="90" x="45" y="238">
+        <parameter key="repository_entry" value="../data/FrutasDataSetA2"/>
       </operator>
       <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="103" name="Multiply (2)" width="90" x="179" y="238"/>
       <operator activated="true" class="perceptron" compatibility="10.2.000" expanded="true" height="82" name="Perceptron (2)" width="90" x="313" y="238">
@@ -89,7 +89,6 @@
         <list key="class_weights"/>
       </operator>
       <connect from_op="Retrieve FrutasDataSetA1" from_port="output" to_op="Multiply" to_port="input"/>
-      <connect from_op="Retrieve FrutasDataSetA2" from_port="output" to_op="Multiply (2)" to_port="input"/>
       <connect from_op="Multiply" from_port="output 1" to_op="Perceptron" to_port="training set"/>
       <connect from_op="Multiply" from_port="output 2" to_op="Apply Model" to_port="unlabelled data"/>
       <connect from_op="Perceptron" from_port="model" to_op="Apply Model" to_port="model"/>
@@ -97,6 +96,7 @@
       <connect from_op="Apply Model" from_port="model" to_port="result 2"/>
       <connect from_op="Performance" from_port="performance" to_port="result 1"/>
       <connect from_op="Performance" from_port="example set" to_port="result 3"/>
+      <connect from_op="Retrieve FrutasDataSetA2" from_port="output" to_op="Multiply (2)" to_port="input"/>
       <connect from_op="Multiply (2)" from_port="output 1" to_op="Perceptron (2)" to_port="training set"/>
       <connect from_op="Multiply (2)" from_port="output 2" to_op="Apply Model (2)" to_port="unlabelled data"/>
       <connect from_op="Perceptron (2)" from_port="model" to_op="Apply Model (2)" to_port="model"/>
