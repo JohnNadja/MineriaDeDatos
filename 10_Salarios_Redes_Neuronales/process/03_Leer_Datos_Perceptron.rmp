@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.2.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="10.2.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve SalariosDataSet" width="90" x="179" y="136">
+        <parameter key="repository_entry" value="//10_Salarios_Redes_Neuronales/data/SalariosDataSet"/>
+      </operator>
+      <operator activated="true" class="map" compatibility="10.2.000" expanded="true" height="82" name="Map" width="90" x="313" y="136">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="Nivel de Educacion"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="true"/>
+        <list key="value_mappings">
+          <parameter key="Licenciatura" value="0"/>
+          <parameter key="Maestria" value="0"/>
+          <parameter key="Doctorado" value="1"/>
+        </list>
+        <parameter key="consider_regular_expressions" value="false"/>
+        <parameter key="add_default_mapping" value="false"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="10.2.000" expanded="true" height="68" name="Store_A1" width="90" x="514" y="136">
+        <parameter key="repository_entry" value="../data/SalariosDataSet_A1"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="10.2.000" expanded="true" height="68" name="Retrieve SalariosDataSet (2)" width="90" x="179" y="238">
+        <parameter key="repository_entry" value="//10_Salarios_Redes_Neuronales/data/SalariosDataSet"/>
+      </operator>
+      <operator activated="true" class="map" compatibility="10.2.000" expanded="true" height="82" name="Map (2)" width="90" x="313" y="238">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="Nivel de Educacion"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="true"/>
+        <list key="value_mappings">
+          <parameter key="Licenciatura" value="0"/>
+          <parameter key="Maestria" value="1"/>
+          <parameter key="Doctorado" value="1"/>
+        </list>
+        <parameter key="consider_regular_expressions" value="false"/>
+        <parameter key="add_default_mapping" value="false"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="10.2.000" expanded="true" height="68" name="Store (2)_A2" width="90" x="514" y="238">
+        <parameter key="repository_entry" value="../data/SalariosDataSet_A2"/>
+      </operator>
+      <connect from_op="Retrieve SalariosDataSet" from_port="output" to_op="Map" to_port="example set input"/>
+      <connect from_op="Map" from_port="example set output" to_op="Store_A1" to_port="input"/>
+      <connect from_op="Store_A1" from_port="through" to_port="result 1"/>
+      <connect from_op="Retrieve SalariosDataSet (2)" from_port="output" to_op="Map (2)" to_port="example set input"/>
+      <connect from_op="Map (2)" from_port="example set output" to_op="Store (2)_A2" to_port="input"/>
+      <connect from_op="Store (2)_A2" from_port="through" to_port="result 2"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+    </process>
+  </operator>
+</process>
