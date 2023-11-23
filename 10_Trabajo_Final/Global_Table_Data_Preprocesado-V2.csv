@@ -1,5 +1,5 @@
 "WHO Region","Cases - cumulative total per 100000 population","Cases - newly reported in last 7 days per 100000 population","Deaths - cumulative total per 100000 population","Deaths - newly reported in last 7 days per 100000 population","Country Name","Cases - cumulative total","Cases - newly reported in last 7 days","Deaths - cumulative total","Deaths - newly reported in last 7 days"
-"Europe",9844.902299004183,2.302008736061252,89.01555037801043,0.011944257866661971,"Global",767364883,179431,6938353,931
+"Global",9844.902299004183,2.302008736061252,89.01555037801043,0.011944257866661971,"Global",767364883,179431,6938353,931
 "Americas",31249.547,0.0,340.527,0.0,"United States of America",103436829,0,1127152,0
 "Western Pacific",6747.064,0.396,8.24,0.005,"China",99268660,5829,121235,68
 "South-East Asia",3260.155,0.173,38.541,0.001,"India",44990278,2387,531867,18
