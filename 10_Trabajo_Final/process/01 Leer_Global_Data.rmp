@@ -13,7 +13,7 @@
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
       <operator activated="true" class="read_csv" compatibility="10.1.003" expanded="true" height="68" name="Read CSV" width="90" x="112" y="136">
-        <parameter key="csv_file" value="D:\Documents\GitHub\MD\MineriaDeDatos\10_Trabajo_Final\WHO-COVID-19-global-data.csv"/>
+        <parameter key="csv_file" value="D:\PROYECTOS\RapidMinerProjects\DataMin_GitHub\MineriaDeDatos\10_Trabajo_Final\WHO-COVID-19-global-data.csv"/>
         <parameter key="column_separators" value=","/>
         <parameter key="trim_lines" value="false"/>
         <parameter key="use_quotes" value="true"/>
@@ -32,10 +32,10 @@
         <list key="annotations"/>
         <parameter key="time_zone" value="SYSTEM"/>
         <parameter key="locale" value="English (United States)"/>
-        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="encoding" value="UTF-8"/>
         <parameter key="read_all_values_as_polynominal" value="false"/>
         <list key="data_set_meta_data_information">
-          <parameter key="0" value="ï»¿Date_reported.true.date.attribute"/>
+          <parameter key="0" value="Date_reported.true.date.attribute"/>
           <parameter key="1" value="Country_code.true.polynominal.attribute"/>
           <parameter key="2" value="Country.true.polynominal.attribute"/>
           <parameter key="3" value="WHO_region.true.polynominal.attribute"/>
@@ -47,7 +47,7 @@
         <parameter key="read_not_matching_values_as_missings" value="false"/>
       </operator>
       <operator activated="true" class="store" compatibility="10.1.003" expanded="true" height="68" name="Store" width="90" x="246" y="136">
-        <parameter key="repository_entry" value="//Repo Git/10_Trabajo_Final/data/Gobal_Data"/>
+        <parameter key="repository_entry" value="//DataMin_GitHub/MineriaDeDatos/10_Trabajo_Final/data/Gobal_Data"/>
       </operator>
       <connect from_op="Read CSV" from_port="output" to_op="Store" to_port="input"/>
       <connect from_op="Store" from_port="through" to_port="result 1"/>
