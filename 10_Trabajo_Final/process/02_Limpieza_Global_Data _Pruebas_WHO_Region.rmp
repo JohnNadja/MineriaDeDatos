@@ -22,12 +22,12 @@
         <parameter key="select_subset" value="Country_code␞Country␞Date_reported"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
-      <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="103" name="Multiply" width="90" x="447" y="187"/>
-      <operator activated="true" class="store" compatibility="10.2.000" expanded="true" height="68" name="Store" width="90" x="581" y="187">
-        <parameter key="repository_entry" value="//10_Trabajo_Final/data/Global_Data_Preprocesado_WHO_REGION"/>
+      <operator activated="true" class="multiply" compatibility="10.2.000" expanded="true" height="103" name="Multiply" width="90" x="380" y="187"/>
+      <operator activated="true" class="store" compatibility="10.2.000" expanded="true" height="68" name="Store" width="90" x="514" y="187">
+        <parameter key="repository_entry" value="//10_Trabajo_Final/data/Global_Data_Preprocesado"/>
       </operator>
-      <operator activated="true" class="write_csv" compatibility="10.2.000" expanded="true" height="82" name="Write CSV" width="90" x="581" y="289">
-        <parameter key="csv_file" value="C:/Users/edgar/Documents/GitHub/MineriaDeDatos/10_Trabajo_Final/Global_Data_Preprocesado_WHO_REGION.csv"/>
+      <operator activated="true" class="write_csv" compatibility="10.2.000" expanded="true" height="82" name="Write CSV" width="90" x="514" y="289">
+        <parameter key="csv_file" value="C:/Users/edgar/Documents/GitHub/MineriaDeDatos/10_Trabajo_Final/Global_Data_Preprocesado.csv"/>
         <parameter key="column_separator" value=","/>
         <parameter key="write_attribute_names" value="true"/>
         <parameter key="quote_nominal_values" value="true"/>
