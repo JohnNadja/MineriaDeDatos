@@ -90,7 +90,10 @@
         <parameter key="replace_what" value="OWID"/>
         <parameter key="replace_by" value="1"/>
       </operator>
-      <operator activated="true" class="multiply" compatibility="10.1.003" expanded="true" height="103" name="Multiply" width="90" x="581" y="136"/>
+      <operator activated="true" class="multiply" compatibility="10.1.003" expanded="true" height="103" name="Multiply" width="90" x="447" y="136"/>
+      <operator activated="true" class="store" compatibility="10.1.003" expanded="true" height="68" name="Store" width="90" x="581" y="136">
+        <parameter key="repository_entry" value="../data/vaccines - data_Preprocesado"/>
+      </operator>
       <operator activated="true" class="write_csv" compatibility="10.1.003" expanded="true" height="82" name="Write CSV" width="90" x="581" y="289">
         <parameter key="csv_file" value="D:/Documents/GitHub/MD/MineriaDeDatos/10_Trabajo_Final/data/Vaccines_data-clean2.csv"/>
         <parameter key="column_separator" value=","/>
@@ -107,8 +110,9 @@
       <connect from_op="Replace Missing Values" from_port="example set output" to_op="Replace" to_port="example set input"/>
       <connect from_op="Replace" from_port="example set output" to_op="Replace (2)" to_port="example set input"/>
       <connect from_op="Replace (2)" from_port="example set output" to_op="Multiply" to_port="input"/>
-      <connect from_op="Multiply" from_port="output 1" to_port="result 1"/>
+      <connect from_op="Multiply" from_port="output 1" to_op="Store" to_port="input"/>
       <connect from_op="Multiply" from_port="output 2" to_op="Write CSV" to_port="input"/>
+      <connect from_op="Store" from_port="through" to_port="result 1"/>
       <portSpacing port="source_input 1" spacing="0"/>
       <portSpacing port="sink_result 1" spacing="0"/>
       <portSpacing port="sink_result 2" spacing="0"/>
