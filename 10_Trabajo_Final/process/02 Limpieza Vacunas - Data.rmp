@@ -25,7 +25,7 @@
       <operator activated="true" class="replace_missing_values" compatibility="10.1.003" expanded="true" height="103" name="Replace Missing Values (2)" width="90" x="45" y="136">
         <parameter key="return_preprocessing_model" value="false"/>
         <parameter key="attribute_filter_type" value="single"/>
-        <parameter key="attribute" value="DATA_SOURCE"/>
+        <parameter key="attribute" value="FIRST_VACCINE_DATE"/>
         <parameter key="attributes" value="NUMBER_VACCINES_TYPES_USED|PERSONS_BOOSTER_ADD_DOSE_PER100|TOTAL_VACCINATIONS|TOTAL_VACCINATIONS_PER100|PERSONS_BOOSTER_ADD_DOSE"/>
         <parameter key="use_except_expression" value="false"/>
         <parameter key="value_type" value="attribute_value"/>
@@ -38,7 +38,7 @@
         <parameter key="include_special_attributes" value="false"/>
         <parameter key="default" value="average"/>
         <list key="columns">
-          <parameter key="DATA_SOURCE" value="average"/>
+          <parameter key="FIRST_VACCINE_DATE" value="average"/>
         </list>
       </operator>
       <operator activated="true" class="replace_missing_values" compatibility="10.1.003" expanded="true" height="103" name="Replace Missing Values" width="90" x="179" y="136">
